@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axenet IT Services - AI Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        
+        /* Neubrutalism Theme Styles */
+        .neu-box {
+            box-shadow: 5px 5px 0px #000;
+            border: 3px solid #000;
+        }
+        
+        .neu-button {
+            box-shadow: 5px 5px 0px #000;
+            border: 3px solid #000;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .neu-button:hover {
+            transform: translate(2px, 2px);
+            box-shadow: 3px 3px 0px #000;
+        }
+        
+        .gradient-bg {
+            background: #ff7e5f;
+        }
+        
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+        }
+        
+        input, textarea {
+            box-shadow: 3px 3px 0px #000;
+            border: 2px solid #000 !important;
+        }
+        
+        input:focus, textarea:focus {
+            outline: none !important;
+            border: 2px solid #ff7e5f !important;
+            box-shadow: 3px 3px 0px #ff7e5f;
+        }
+
+        /* Mobile menu animation */
+        #mobile-menu {
+            transition: max-height 0.3s ease-out;
+            max-height: 0;
+            overflow: hidden;
+        }
+        
+        #mobile-menu.open {
+            max-height: 1000px;
+        }
+    </style>
+</head>
+<body class="bg-yellow-50">
+    <!-- Navigation -->
+    <nav class="bg-white fixed w-full z-50 neu-box">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-pink-600">Axenet</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-900 hover:text-pink-600 font-bold">Home</a>
+                    <a href="#services" class="text-gray-900 hover:text-pink-600 font-bold">Services</a>
+                    <a href="#technologies" class="text-gray-900 hover:text-pink-600 font-bold">Technologies</a>
+                    <a href="#contact" class="text-gray-900 hover:text-pink-600 font-bold">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-900">
+                        <i class="bi bi-list text-3xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden bg-white">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-gray-900 hover:text-pink-600 font-bold">Home</a>
+                <a href="#services" class="block px-3 py-2 text-gray-900 hover:text-pink-600 font-bold">Services</a>
+                <a href="#technologies" class="block px-3 py-2 text-gray-900 hover:text-pink-600 font-bold">Technologies</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-900 hover:text-pink-600 font-bold">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-green-300 pt-28 pb-16 neu-box my-5 mx-4 sm:mx-8 lg:mx-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-black mb-6">Next-Gen AI Solutions</h1>
+                <p class="text-xl text-black mb-8">Transforming businesses with cutting-edge AI technology</p>
+                <button class="bg-pink-500 text-white px-8 py-4 rounded-md font-bold hover:bg-pink-600 transition neu-button">
+                    Get Started
+                </button>
+            </div>
+            <div class="mt-12 flex justify-center">
+                <img src="https://images.unsplash.com/photo-1677442135636-fa6443c592d0?q=80&w=1000" alt="AI Technology" class="w-full max-w-2xl rounded-md neu-box">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-16 bg-white neu-box my-5 mx-4 sm:mx-8 lg:mx-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- AI Phone Agent -->
+                <div class="p-6 bg-blue-300 rounded-md card-hover neu-box">
+                    <i class="bi bi-telephone-fill text-4xl text-black mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">AI Phone Agent</h3>
+                    <p class="text-gray-800">Intelligent voice assistance for seamless customer interaction. Never miss a call with our 24/7 AI phone support.</p>
+                    <button class="mt-4 bg-black text-white py-2 px-4 rounded-md neu-button">Learn More</button>
+                </div>
+                <!-- Chat Agent -->
+                <div class="p-6 bg-pink-300 rounded-md card-hover neu-box">
+                    <i class="bi bi-chat-dots-fill text-4xl text-black mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Chat Agent</h3>
+                    <p class="text-gray-800">24/7 automated chat support powered by advanced AI. Instant responses to customer queries any time of day.</p>
+                    <button class="mt-4 bg-black text-white py-2 px-4 rounded-md neu-button">Learn More</button>
+                </div>
+                <!-- Custom AI Solutions -->
+                <div class="p-6 bg-yellow-300 rounded-md card-hover neu-box">
+                    <i class="bi bi-gear-fill text-4xl text-black mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Custom AI Solutions</h3>
+                    <p class="text-gray-800">Tailored AI solutions for your specific business needs. We build bespoke AI tools that solve your unique challenges.</p>
+                    <button class="mt-4 bg-black text-white py-2 px-4 rounded-md neu-button">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies -->
+    <section id="technologies" class="py-16 bg-purple-300 neu-box my-5 mx-4 sm:mx-8 lg:mx-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Technologies We Use</h2>
+            <p class="text-center mb-8">Trusted by the world's most innovative teams</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-4 bg-white rounded-md neu-box">
+                    <img src="https://images.unsplash.com/photo-1683459503442-478da7d1e3ed?q=80&w=200" alt="VAPI" class="mx-auto mb-3 h-24 w-24 object-cover rounded-md">
+                    <h3 class="font-bold">VAPI</h3>
+                    <p class="text-sm mt-2">Advanced Voice API for natural conversations</p>
+                </div>
+                <div class="p-4 bg-white rounded-md neu-box">
+                    <img src="https://images.unsplash.com/photo-1664447972262-7ae881cf0a89?q=80&w=200" alt="GPT" class="mx-auto mb-3 h-24 w-24 object-cover rounded-md">
+                    <h3 class="font-bold">GPT</h3>
+                    <p class="text-sm mt-2">State-of-the-art language processing</p>
+                </div>
+                <div class="p-4 bg-white rounded-md neu-box">
+                    <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=200" alt="Ollama" class="mx-auto mb-3 h-24 w-24 object-cover rounded-md">
+                    <h3 class="font-bold">Ollama</h3>
+                    <p class="text-sm mt-2">Local AI models for enhanced privacy</p>
+                </div>
+                <div class="p-4 bg-white rounded-md neu-box">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=200" alt="Custom AI" class="mx-auto mb-3 h-24 w-24 object-cover rounded-md">
+                    <h3 class="font-bold">Custom AI</h3>
+                    <p class="text-sm mt-2">Tailor-made AI solutions for your needs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-16 bg-cyan-300 neu-box my-5 mx-4 sm:mx-8 lg:mx-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Why Choose Axenet</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="flex flex-col items-center p-6 bg-white rounded-md neu-box">
+                    <i class="bi bi-lightning-charge-fill text-4xl text-black mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Rapid Deployment</h3>
+                    <p class="text-center">Get your AI solutions up and running in days, not months</p>
+                </div>
+                <div class="flex flex-col items-center p-6 bg-white rounded-md neu-box">
+                    <i class="bi bi-shield-check text-4xl text-black mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Enterprise Security</h3>
+                    <p class="text-center">Bank-grade security for all your sensitive data</p>
+                </div>
+                <div class="flex flex-col items-center p-6 bg-white rounded-md neu-box">
+                    <i class="bi bi-graph-up text-4xl text-black mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">Scalable Solutions</h3>
+                    <p class="text-center">Grow your AI capabilities as your business expands</p>
+                </div>
+                <div class="flex flex-col items-center p-6 bg-white rounded-md neu-box">
+                    <i class="bi bi-headset text-4xl text-black mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">24/7 Support</h3>
+                    <p class="text-center">Our team is always available to help you succeed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-16 bg-orange-300 neu-box my-5 mx-4 sm:mx-8 lg:mx-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Contact Us</h2>
+            <div class="max-w-lg mx-auto bg-white p-8 rounded-md neu-box">
+                <form class="space-y-6">
+                    <div>
+                        <label class="block text-gray-900 mb-2 font-bold">Name</label>
+                        <input type="text" class="w-full px-4 py-2 rounded-md bg-white" required>
+                    </div>
+                    <div>
+                        <label class="block text-gray-900 mb-2 font-bold">Email</label>
+                        <input type="email" class="w-full px-4 py-2 rounded-md bg-white" required>
+                    </div>
+                    <div>
+                        <label class="block text-gray-900 mb-2 font-bold">Message</label>
+                        <textarea class="w-full px-4 py-2 rounded-md bg-white" rows="4" required></textarea>
+                    </div>
+                    <button class="w-full bg-black text-white py-3 rounded-md hover:bg-gray-800 transition font-bold neu-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8 neu-box my-5 mx-4 sm:mx-8 lg:mx-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Axenet</h3>
+                    <p>Transforming businesses with next-generation AI solutions.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="hover:text-pink-400">Home</a></li>
+                        <li><a href="#services" class="hover:text-pink-400">Services</a></li>
+                        <li><a href="#technologies" class="hover:text-pink-400">Technologies</a></li>
+                        <li><a href="#contact" class="hover:text-pink-400">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-pink-400 text-2xl"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="hover:text-pink-400 text-2xl"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="hover:text-pink-400 text-2xl"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="hover:text-pink-400 text-2xl"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>© 2024 Axenet IT Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('open');
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu if open
+                document.getElementById('mobile-menu').classList.remove('open');
+            });
+        });
+
+        // Form submission with validation
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formElements = this.elements;
+            let valid = true;
+            
+            for (let i = 0; i < formElements.length; i++) {
+                if (formElements[i].required && !formElements[i].value) {
+                    valid = false;
+                    formElements[i].classList.add('border-red-500');
+                } else if (formElements[i].required) {
+                    formElements[i].classList.remove('border-red-500');
+                }
+            }
+            
+            if (valid) {
+                alert('Thank you for your message! We will get back to you soon.');
+                this.reset();
+            } else {
+                alert('Please fill in all required fields.');
+            }
+        });
+        
+        // Add animation to cards on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fadeIn');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.neu-box').forEach(box => {
+            observer.observe(box);
+        });
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
